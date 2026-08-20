@@ -1,1 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="description" content="Connect with Halo Technologies">
+
+  <title>Connect | Halo Technologies</title>
+
+  <style>
+    :root {
+      --bg: #050505;
+      --card: #0d0d0d;
+      --text: #ffffff;
+      --muted: #999999;
+      --green: #c6f000;
+      --border: rgba(198, 240, 0, 0.35);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      padding: 20px 16px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(
+          circle at 50% 0%,
+          rgba(198, 240, 0, 0.10),
+          transparent 35%
+        ),
+        var(--bg);
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .wrap {
+      width: 100%;
+      max-width: 430px;
+      text-align: center;
+    }
+
+    /* HALO LOGO */
+    .logo {
+      width: 390px;
+      max-width: 90%;
+      height: auto;
+      max-height: 150px;
+      object-fit: contain;
+      display: block;
+      margin: 0 auto 25px;
+    }
+
+    /* CONNECT CARD */
+    .card {
+      background: linear-gradient(145deg, #111111, #080808);
+      border: 1px solid rgba(255,255,255,0.10);
+      border-radius: 24px;
+      padding: 22px;
+      box-shadow: 0 20px 55px rgba(0,0,0,0.45);
+    }
+
+    .connect-title {
+      margin: 0 0 18px;
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    /* BUTTON */
+    .btn {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+
+      width: 100%;
+      min-height: 68px;
+
+      padding: 12px 17px;
+      margin: 12px 0;
+
+      border-radius: 15px;
+      border: 1px solid var(--border);
+
+      background: #111111;
+      color: #ffffff;
+
+      text-decoration: none;
+      text-align: left;
+
+      transition:
+        transform 0.15s ease,
+        background 0.15s ease;
+    }
+
+    .btn:active {
+      transform: scale(0.98);
+    }
+
+    .icon {
+      width: 40px;
+      height: 40px;
+      flex: 0 0 40px;
+
+      display: grid;
+      place-items: center;
+
+      border-radius: 11px;
+
+      background: var(--green);
+      color: #000000;
+
+      font-size: 20px;
+      font-weight: 900;
+    }
+
+    .btn strong {
+      display: block;
+      font-size: 15px;
+      letter-spacing: 0.4px;
+    }
+
+    .btn span {
+      display: block;
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    /* FOOTER */
+    .footer {
+      margin-top: 30px;
+      color: #777777;
+      font-size: 12px;
+      line-height: 1.8;
+    }
+
+    .footer a {
+      color: var(--green);
+      text-decoration: none;
+    }
+
+    @media (hover: hover) {
+      .btn:hover {
+        transform: translateY(-2px);
+        background: #161616;
+      }
+    }
+
+    /* MOBILE */
+    @media (max-width: 380px) {
+      .logo {
+        width: 320px;
+      }
+
+      .card {
+        padding: 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="wrap">
+
+    <!-- YOUR CURRENT HALO LOGO -->
+    <!-- halo-logo.png should be inside the same /connect/ folder -->
+    <img
+      class="logo"
+      src="halo-logo.png"
+      alt="Halo Technologies"
+    >
+
+    <!-- CONNECT OPTIONS -->
+    <section class="card">
+
+      <h2 class="connect-title">
+        Let's Connect
+      </h2>
+
+      <!-- CALL -->
+      <a
+        class="btn"
+        href="tel:+917594992523"
+      >
+        <div class="icon">☎</div>
+
+        <div>
+          <strong>CALL NOW</strong>
+          <span>75949 92523</span>
+        </div>
+      </a>
+
+
+      <!-- WHATSAPP -->
+      <a
+        class="btn"
+        href="https://wa.me/917594992523?text=Hello%20Halo%20Technologies%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services."
+        target="_blank"
+        rel="noopener"
+      >
+        <div class="icon">☏</div>
+
+        <div>
+          <strong>MESSAGE ON WHATSAPP</strong>
+          <span>Start a conversation</span>
+        </div>
+      </a>
+
+
+      <!-- INSTAGRAM -->
+      <!-- REPLACE THE URL BELOW WITH YOUR ACTUAL INSTAGRAM PAGE -->
+      <a
+        class="btn"
+        href="https://www.instagram.com/HALO_TECH/"
+        target="_blank"
+        rel="noopener"
+      >
+        <div class="icon">◎</div>
+
+        <div>
+          <strong>FOLLOW ON INSTAGRAM</strong>
+          <span>See our latest updates</span>
+        </div>
+      </a>
+
+
+      <!-- SAVE NUMBER -->
+      <a
+        class="btn"
+        href="tel:+917594992523"
+      >
+        <div class="icon">+</div>
+
+        <div>
+          <strong>SAVE OUR NUMBER</strong>
+          <span>Save Halo Technologies</span>
+        </div>
+      </a>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <div class="footer">
+
+      <a href="https://haloled.in/">
+        haloled.in
+      </a>
+
+      <br>
+
+      Kattappana, Idukki, Kerala
+
+    </div>
+
+  </main>
+
+</body>
+</html>
